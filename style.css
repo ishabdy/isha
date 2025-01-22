@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    width: 100vw;
+    height: 100vh;
+     background-color: #3b4040;
+    background-image: linear-gradient(160deg, #3b4040 0%, #80D0C7 50%, #342b2b 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card{
+    /* width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px; */
+    width:400px;
+    height: 620px;
+    background-color: white;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
+    border-radius: 20px;
+    display:flex;
+    flex-direction: column;
+    gap:10px;
+    /* justify-content: center; */
+    align-items: center;
+    /* justify-content: center; */
+
+}
+
+.card img{
+    width: 100%;
+    height:30%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.textbox
+{display: flex;
+flex-direction: column;
+align-items: center;
+gap:15px;
+text-align: center;
+/* width:75%;} */}
+
+.bluebox{
+    /* width: 80%;
+    height:15%;
+    background-color: aqua;
+    border-radius:10px ;
+    align-items: center;
+    justify-content: center; */
+    height:10%;
+    width: 80%;
+    display:flex;
+    /* border:1px solid black; */
+    align-items: center;
+     background-color:rgba(89, 89, 163, 0.503);
+    border-radius:20px;
+    justify-content: space-around;
+
+}
+
+.footer{
+    display:flex; 
+    /* justify-content: space-around;
+    
+    width: 100%;
+    height:33.5%;
+    /* background-color: RED; */
+    justify-content: space-around;
+    width: 100%;
+    height:32%;
+    /* background-color: black; */
+    
+}
+/* .ballon{
+    width: 100%;
+    height:50%;
+} */
+
+.leftbox{
+    display:flex;
+    /* justify-content: left; */
+    justify-content:  space-around;
+    align-items: center;
+    width:30%;
+    height:70%;
+    /* border:1px solid black; */
+
+
+}
+
+/* .textbox h2{
+    width:20ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow:hidden;
+    animation: typing 2s steps(20) infiniter alternate-reverse ;
+}
+
+@keyframe typing{
+    from{width:0ch;}
+} */
+
+ h2 {
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate,
+        blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+}
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
